@@ -1,10 +1,9 @@
-// client/src/App.js
-import React, { Component } from "react";
+// client/src/index.js
 
-class App extends Component {
-  render() {
-    return <div>I'M READY TO USE THE BACK END APIS! :-)</div>;
-  }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
